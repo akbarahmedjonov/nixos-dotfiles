@@ -57,17 +57,18 @@
 
     gnome.gcr-ssh-agent.enable = false;
     dbus.enable = true;
-    displayManager= {
-      sddm = {
-        enable=true;
-	settings = {
-          Autologin = {
-            Session = "niri.desktop";
-	    User = "user";
-	  };
-	};
-      };
-    };
+#    displayManager= {
+#      sddm = {
+#        enable=true;
+#	settings = {
+#          Autologin = {
+#            Session = "niri.desktop";
+#	    User = "user";
+#	  };
+#	};
+#      };
+#    };
+    getty.autologinUser = "user";
     upower.enable = true;
     gvfs.enable = true;
     power-profiles-daemon.enable = true;

@@ -3,6 +3,7 @@
     ./modules/theme.nix
     ./modules/packages.nix
     ./modules/git.nix
+    ./modules/symlink.nix
   ];
   home.username = "user";
   home.homeDirectory = "/home/user";
