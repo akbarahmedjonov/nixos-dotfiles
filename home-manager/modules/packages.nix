@@ -43,6 +43,7 @@
     pipes
     fortune
     cowsay
+    stow
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];

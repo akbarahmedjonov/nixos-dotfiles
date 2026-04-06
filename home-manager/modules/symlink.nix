@@ -1,23 +1,22 @@
-{ config, ... }:
+{ config, pkgs, ... }:
+
 let
-  dotfilesPath = "${config.home.homeDirectory}/n/home-manager/configs";
-  mkSymlink = path: config.lib.file.mkOutOfStoreSymlink "${dotfilesPath}/${path}";
-  
-  apps = [
-    "fish"
-    "kitty"
-    "niri"
-    "noctalia"
-    "tmux"
-    "starship.toml" 
-  ];
+  dotfiles = "${config.home.homeDirectory}/n/home-manager/configs";
+  create_symlink = path: config.lib.file.mkOutOfStoreSymlink path;
+  configs = {
+    "kitty"    = "kitty";
+    "niri"     = "niri";
+    "noctalia" = "noctalia";
+    "tmux"     = "tmux";
+    "nvim"     = "nvim";
+    "starship.toml" = "starship.toml";
+  };
 in
 {
-  xdg.configFile = builtins.listToAttrs (map (name: {
-    inherit name;
-    value = {
-      source = mkSymlink name;
-      recursive = true; 
-    };
-  }) apps);
+  xdg.configFile = builtins.mapAttrs
+    (name: subpath: {
+      source = create_symlink "${dotfiles}/${subpath}";
+      recursive = true;
+    })
+    configs;
 }
