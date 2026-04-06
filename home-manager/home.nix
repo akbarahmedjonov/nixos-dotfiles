@@ -2,6 +2,7 @@
   imports = [
     ./modules/theme.nix
     ./modules/packages.nix
+    ./modules/fish.nix
     ./modules/git.nix
   ];
   home.username = "user";

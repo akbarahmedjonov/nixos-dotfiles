@@ -44,6 +44,8 @@
     fortune
     cowsay
     stow
+    lua-language-server
+    stylua
   ];
 
   nix.nixPath = [ "nixpkgs=${inputs.nixpkgs}" ];
