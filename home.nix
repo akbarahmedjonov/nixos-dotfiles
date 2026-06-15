@@ -64,6 +64,7 @@
     imv
     nwg-look
     bat
+    wl-clipboard
   ];
 
   gtk = {
