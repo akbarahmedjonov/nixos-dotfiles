@@ -55,5 +55,6 @@
     rustc
     tldr
     rust-analyzer
+    rustfmt
   ];
 }
