@@ -18,7 +18,6 @@
     alejandra
     pcmanfm
     zed-editor
-    home-manager
     tmux
     eza
     bat
