@@ -6,5 +6,6 @@
     ./security.nix
     ./boot.nix
     ./networking.nix
+    ./theme.nix
   ];
 }

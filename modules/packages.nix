@@ -26,6 +26,10 @@
     zip
     unzip
     zoxide
+    opencode
+    adw-gtk3
+    papirus-icon-theme
+    bibata-cursors
   ];
 
   programs = {
@@ -44,5 +48,6 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
+    jetbrains-mono
   ];
 }
