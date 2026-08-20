@@ -21,7 +21,7 @@
           icon-theme = "Papirus-Dark";
           cursor-theme = "Bibata-Modern-Ice";
           cursor-size = 24;
-          font-name = "JetBrains Mono 11";
+          font-name = "JetBrainsMono Nerd Font Propo Regular 11";
         };
       };
     }
