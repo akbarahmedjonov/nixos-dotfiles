@@ -13,7 +13,9 @@
     libnotify
     ghostty
     brave
-    noctalia
+    fuzzel
+    wl-clipboard
+    quickshell
     nil
     alejandra
     pcmanfm
@@ -29,17 +31,19 @@
     adw-gtk3
     papirus-icon-theme
     bibata-cursors
+    telegram-desktop
   ];
 
-  programs = {
-    niri.enable = true;
+  programs.hyprland = {
+    enable = true;
+    xwayland.enable = true;
   };
 
   xdg.portal = {
     enable = true;
     xdgOpenUsePortal = true;
     extraPortals = with pkgs; [
-      xdg-desktop-portal-gnome
+      xdg-desktop-portal-hyprland
       xdg-desktop-portal-gtk
       xdg-desktop-portal-wlr
     ];
