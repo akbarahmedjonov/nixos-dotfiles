@@ -11,13 +11,13 @@
     libva-utils
     obs-studio
     libnotify
-    foot
-    librewolf
+    ghostty
+    brave
     noctalia
     nil
     alejandra
     pcmanfm
-    zed-editor
+    vscode
     tmux
     eza
     bat
@@ -47,6 +47,5 @@
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
-    jetbrains-mono
   ];
 }
