@@ -2,6 +2,20 @@
   nixpkgs.config.allowUnfree = true;
 
   environment.systemPackages = with pkgs; [
+    # Nvim lsp and formatters
+    basedpyright
+    lua-language-server
+    clang-tools          
+    nil                  
+    ruff                 
+    stylua
+    alejandra
+    git
+    ripgrep
+    fd
+    fzf
+
+    # Other
     vim
     wget
     curl
@@ -45,31 +59,21 @@
     localsend
     starship
     trash-cli
-
-    # Nvim lsp and formatters
-    basedpyright
-    lua-language-server
-    clang-tools          
-    nil                  
-    ruff                 
-    stylua
-    alejandra
-    git
-    ripgrep
-    fd
-    fzf
+    gcc
+    python3
+    pfetch-rs
+    lazygit
   ];
 
-  programs.hyprland = {
+  programs.niri = {
     enable = true;
-    xwayland.enable = true;
   };
 
   xdg.portal = {
     enable = true;
     xdgOpenUsePortal = true;
     extraPortals = with pkgs; [
-      xdg-desktop-portal-hyprland
+      xdg-desktop-portal-gnome
       xdg-desktop-portal-gtk
       xdg-desktop-portal-wlr
     ];
