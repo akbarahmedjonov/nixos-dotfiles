@@ -1,7 +1,5 @@
 { config, pkgs, ... }:
-
 {
-
   environment.sessionVariables = {
     EDITOR = "nvim";
     VISUAL = "nvim";
@@ -21,7 +19,7 @@
           icon-theme = "Papirus-Dark";
           cursor-theme = "Bibata-Modern-Ice";
           cursor-size = 24;
-          font-name = "JetBrainsMono Nerd Font Propo Regular 11";
+          font-name = "Adwaita Sans Regular 11";
         };
       };
     }

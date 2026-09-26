@@ -1,6 +1,7 @@
 {
   imports = [
     ./packages.nix
+    ./services.nix
     ./user.nix
     ./hardware.nix
     ./security.nix

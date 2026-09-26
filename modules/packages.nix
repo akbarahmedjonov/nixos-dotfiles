@@ -14,7 +14,6 @@
     brave-origin
     noctalia
     wl-clipboard
-    nil
     pcmanfm
     vscode
     tmux
@@ -30,27 +29,30 @@
     bibata-cursors
     telegram-desktop
     zed-editor
+    cliamp
+    kew
+    mpv
+    swayimg
+    yt-dlp
+    htop
+    btop
+    pavucontrol
+    nnn
+    amberol
+    wiremix
+    evince
+    onlyoffice-desktopeditors
+    localsend
+    starship
 
     # Nvim lsp and formatters
-
-    # LSP servers
     basedpyright
     lua-language-server
-    clang-tools          # clangd + clang-format
-    rust-analyzer
-    typescript-language-server
-    typescript
-    vscode-langservers-extracted  # html, cssls
-    nil                  # nil_ls
-
-    # Formatters (conform.nvim)
-    ruff                 # ruff_format
-    rustfmt
+    clang-tools          
+    nil                  
+    ruff                 
     stylua
-    prettier
     alejandra
-
-    # Runtime deps for telescope.nvim / oil.nvim / vim.pack.add
     git
     ripgrep
     fd
