@@ -6,18 +6,15 @@
     wget
     curl
     neovim
-    git
     xwayland-satellite
     libva-utils
     obs-studio
     libnotify
     ghostty
-    brave
-    fuzzel
+    brave-origin
+    noctalia
     wl-clipboard
-    quickshell
     nil
-    alejandra
     pcmanfm
     vscode
     tmux
@@ -32,6 +29,32 @@
     papirus-icon-theme
     bibata-cursors
     telegram-desktop
+    zed-editor
+
+    # Nvim lsp and formatters
+
+    # LSP servers
+    basedpyright
+    lua-language-server
+    clang-tools          # clangd + clang-format
+    rust-analyzer
+    typescript-language-server
+    typescript
+    vscode-langservers-extracted  # html, cssls
+    nil                  # nil_ls
+
+    # Formatters (conform.nvim)
+    ruff                 # ruff_format
+    rustfmt
+    stylua
+    prettier
+    alejandra
+
+    # Runtime deps for telescope.nvim / oil.nvim / vim.pack.add
+    git
+    ripgrep
+    fd
+    fzf
   ];
 
   programs.hyprland = {
