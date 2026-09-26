@@ -44,6 +44,7 @@
     onlyoffice-desktopeditors
     localsend
     starship
+    trash-cli
 
     # Nvim lsp and formatters
     basedpyright
